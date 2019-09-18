@@ -70,16 +70,20 @@ public class BakeryGoodsDatabase {
 
         for (BakeryGoods x : bakeryGoodsList) {
             if (dietRestriction.trim().equalsIgnoreCase((x.getPeanutFree()))) {
-                System.out.println(x.getName() + ", ");
+                System.out.println("\nName: " + x.getName() + ", "+ "\tPrice: " + x.getPrice()+", "+"\tExpiry date: " +
+                        x.getExpDate()+", "+ "\tQuantity: " + x.getQuantity());
             }
             else if (dietRestriction.trim().equalsIgnoreCase((x.getGlutenFree()))) {
-                System.out.println(x.getName() + ", ");
+                System.out.println("\nName: " + x.getName() + ", "+ "\tPrice: " + x.getPrice()+", "+"\tExpiry date: " +
+                        x.getExpDate()+", "+ "\tQuantity: " + x.getQuantity());
             }
             else if (dietRestriction.trim().equalsIgnoreCase((x.getSoyFree()))) {
-                System.out.println(x.getName() + ", ");
+                System.out.println("\nName: " + x.getName() + ", "+ "\tPrice: " + x.getPrice()+", "+"\tExpiry date: " +
+                        x.getExpDate()+", "+ "\tQuantity: " + x.getQuantity());
             }
             else if (dietRestriction.trim().equalsIgnoreCase((x.getDairyFree()))) {
-                System.out.println(x.getName() + ", ");
+                System.out.println("\nName: " + x.getName() + ", "+ "\tPrice: " + x.getPrice()+", "+"\tExpiry date: " +
+                        x.getExpDate()+", "+ "\tQuantity: " + x.getQuantity());
             }
         }
     }

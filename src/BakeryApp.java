@@ -26,7 +26,7 @@ public class BakeryApp {
 
         while (!(response.equalsIgnoreCase("N"))) {
 
-            System.out.println("\nPlease enter the diet restrictions : Peanut Free, Gluten free, Soy free or Dairy free");
+            System.out.println("\nPlease enter the diet restrictions : PeanutFree, GlutenFree, SoyFree or DairyFree");
             System.out.print("Or, please type \"all\" to see al list of or foods..");
 
             dietRestriction = input.nextLine();
@@ -37,7 +37,8 @@ public class BakeryApp {
             } else {
                 List<BakeryGoods> bg = bakeryGoodsDatabase.getAllBakeryGoods();
                 for (BakeryGoods x : bg)
-                    System.out.println(x.getName() + ", ");
+                    System.out.println("\nName: " + x.getName() + ", "+ "\tPrice: " + x.getPrice()+", "+"\tExpiry date: " +
+                            x.getExpDate()+", "+ "\tQuantity: " + x.getQuantity());
 
             }
 
